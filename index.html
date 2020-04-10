@@ -10,6 +10,145 @@
     <link rel="stylesheet" href="./assets/css/style.css">
   </head>
   <body>
+    <section class="all">
+      <div class="inner">
+        <div class="paper">
+          <!-- ------------書面------------- -->
 
+            <h1 class="title">アカウント作成</h1>
+            <div class="contentbox">
+              <div class="fb-box half-width tobox">
+                <a href="" class="fb-start full-width tostart">Facebookでスタート</a>
+              </div>
+              <div class="google-box half-width tobox">
+                <a href="" class="google-start full-width tostart">Googleでスタート</a>
+              </div>
+            </div>
+            <p class ="start-under this-text"> タイムラインへ投稿を行うことや、アカウント情報を伝えることはありません。</p>
+            <div class="border">
+              <p class="border-text this-text">アカウント情報</p>
+            </div>
+            <!-- -------入力フォーム------- -->
+            <form action="" class="base-form full-width" method="post">
+              <div class="name-box">
+                <div class="name-left half-width">
+                  <p class="name this-text">名字<span class="red-color">※</span></p>
+                  <input type="text" name="last-name" class="last-name-box this-name" required="">
+                </div>
+                <div class="name-right half-width">
+                  <p class="name this-text">名前<span class="red-color">※</span></p>
+                  <input type="text" name="first-name" class="first-name-box this-name" required="">
+                </div>
+              </div>
+              <!-- ---------sex------- -->
+
+              <div class="mt-20">
+
+                <p class="this-text">性別</p>
+                <div class="sex">
+                  <label class="sex-radio-box">
+                    <input type="radio" name="gender" value="male" class="sex-check">
+                    <span> 男性</span>
+                  </label>
+  
+                  <label class="sex-radio-box">
+                    <input type="radio" name="gender" value="female" class="sex-check">
+                    <span>女性</span>
+                  </label>
+  
+                  <label class="sex-radio-box">
+                    <input type="radio" name="gender" value="other" class="sex-check">
+                    <span> その他</span>
+                  </label>
+                </div>
+
+              </div>
+              <!-- ------------出身------------- -->
+              
+              <div class="origin half-width mt-20">
+                <p class ="origin-title this-text">出身</p>
+                <div class="select-area">
+                  <select name="origin" id="origin" class="origin-data">
+                    <option value="東京">東京</option>
+                    <option value="東京">千葉</option>
+                    <option value="東京">埼玉</option>
+                    <option value="東京">神奈川</option>
+                  </select>
+                </div>
+              </div>
+
+              <!-- -----mail----- -->
+
+              <div class="mail mt-20">
+                <p class="this-text mail-title">Eメール<span class="red-color">※</p>
+                  <input type="email" class="E-mail addless-box" name="email" placeholder="ex) hoge@example.com" required="">
+              </div>
+
+              <!-- ------------Tell------------- -->
+
+              <div class="tell mt-20">
+                <p class="this-text">電話番号</p>
+                <input type="tell" class="tell-no addless-box" name="tell" placeholder="ex)09012345678">
+              </div>
+              
+              <!-- ------------PW------------- -->
+
+              <div class="password mt-20">
+                <p class ="this-text">パスワード<span class="red-color">※</span></p>
+                <input type="password" class="password addless-box" name="password" required="">
+              </div>
+              <div class="password mt-20">
+                <p class ="this-text">パスワード(確認用)<span class="red-color">※</span></p>
+                <input type="password" class="password addless-box" name="password-confirm" required="">
+              </div>
+              <!-- ------------複数チェック------------- -->
+
+              <div class="remarks mt-20">
+                <p class ="this-text">希望コース</p>
+                <div>
+
+                  <div class="cours">
+                    <input type="checkbox" name="cours" value="frontend" id="frontend">
+                    <label class="course-option-text mt-05" for="frontend">フロントエンド</label>
+                  </div>
+                  <div class="cours">
+                    <input type="checkbox" name="cours" value="backend" id="backend">
+                    <label class="course-option-text" for="backend">バックエンド</label>
+                  </div>
+                  <div class="cours">
+                    <input type="checkbox" name="cours" value="app" id="app">
+                    <label class="course-option-text" for="app">アプリ</label>
+                  </div>
+                </div>
+              </div>
+
+              <!-- ------------備考------------- -->
+
+              <div class="remarks mt-20">
+                <p cdlass="this-text">備考</p>
+                <textarea class ="remarks-box mt-05" name="remarks" placeholder="何かあればご記入ください"></textarea> 
+              </div>
+
+              <!-- -----------送信------------- -->
+
+              <div class="mt-20">
+                <input type="submit" value="アカウント作成" class="button full-width">
+              </div>
+              <p class="agreement mt-20">アカウントを作成することにより、<a class="link-color" href="">利用規約</a>と<a class="link-color" href="">プライバシーポリシー</a>に同意するものとします。</p>
+            </form>
+
+            
+            
+            
+            
+            
+            <!-- ------------書面ここまで------------- -->
+          </div>
+                <div class ="foot-part">
+                  <p>すでにアカウントをお持ちですか？<a href="" class="link-color">ログイン</a></p>
+                  <a href="" class="link-color remail">認証メールが届きませんか？</a>
+                </div>
+      </div>
+    </section>
   </body>
 </html>

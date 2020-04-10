@@ -1,1 +1,368 @@
-@charset "utf-8";
+@charset "utf-8"; 
+
+.all {
+  background-color: #f2f6f7;
+  padding: 32px 0;
+} 
+body {
+  font-family: 'PT Sans', Helvetica, Arial, YuGothic, 'Kozuka Gothic std', sans-serif;
+}
+.inner {
+  margin: 0 auto;
+  width: 640px;  
+}
+.paper {
+  box-sizing: border-box;
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, .18);
+  padding: 48px 64px;
+  width: 100%;
+}
+
+.mt-20 {
+  margin-top: 20px;
+  background: transparent;
+}
+.half-width {
+  width: 50%;
+}
+.full-width {
+  width: 100%;
+} 
+
+.default-text {
+  color: #949697;
+  font-size: 12px;
+}
+.this-text {
+  display: block;
+  color: #545658;
+  font-size: 12px;
+}
+.red-color {
+  color: red;
+  padding-left: 4px;
+} 
+
+.title{
+  text-align: center;
+  color: #545658;
+  font-size: 24px;
+}
+
+.contentbox {
+  display: flex;
+}
+
+.tobox {
+  text-decoration: none;
+  margin-top: 24px;
+  box-sizing: border-box;
+  display: inline-block;
+  text-align: center;
+  padding: 13px;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  border: 1px solid #d9d9d9;
+  transition: .3s;
+  width: 50%;
+  border-radius: 3px;
+}
+.fb-box {
+  background-color: #3b5999;
+  border-color: #3b5999;
+}
+.google-box {
+  margin-left: 8px;
+}
+
+.tostart {
+  width: 100%;
+}
+.google-start {
+  color: #dd4b39;
+  background-color: #fff;
+}
+.fb-start {
+  color: #fff;
+}
+
+.start-under {
+  text-align: center;
+  margin-top: 8px;
+}
+/* ------------------------------- */
+
+
+.border {
+  position: relative;
+  text-align: center;
+  margin: 20px 0;
+}
+.border:after {
+  content: "";
+  width: 100%;
+  height: 1px;
+  background-color: #ececec;
+  position: absolute;
+  top: 50%;
+  left: 0;
+}
+
+.border-text {
+  background-color: #fff;
+  display: inline-block;
+  padding: 0 10px;
+  position: relative;
+  z-index: 5;
+} 
+
+/* --------------------------- */
+
+.name-box {
+  display: flex;
+  width: 100%;
+}
+.name {
+  display: block;
+}
+.name-left, .name-right {
+  width: 50%;
+}
+
+.first-name-box, .last-name-box {
+  margin-top: 5px;
+}
+
+.name-right {
+  margin-left: 16px;
+}
+
+.this-name {
+  box-sizing: border-box;
+  height: 36px;
+  width: 100%;
+  padding: 5px;
+  line-height: 2;
+  background-color: #fbfbfb;
+  border: 1px solid #d9d9d9;
+  border-radius: 3px;
+  outline: none;
+  resize: none;
+} 
+
+
+.sex {
+  margin-top: 8px;
+}
+.sex-radio-box input {
+  display: none;
+}
+.sex-radio-box span {
+  padding: 3px 3px 3px 20px;
+  position: relative;
+}
+
+.sex-radio-box {
+  margin-left: 10px;
+}
+.sex-radio-box:first-child {
+  margin-left: 0;
+}
+
+
+.sex-radio-box span:before {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 0;
+  height: 14px;
+  width: 14px;
+  background-color: #fbfbfb;
+  border: 1px solid #d9d9d9;
+  border-radius: 50%;
+}
+
+.sex-check:checked + span:after {
+  content: "";
+  position: absolute;
+  top: 6px;
+  left: 4px;
+  height: 8px;
+  width: 8px;
+  border-radius: 50%;
+  background-color: #01bfbd;
+}
+/* --------------出身----------------- */
+
+.origin-data {
+  box-sizing: border-box;
+  height: 36px;
+  width: 100%;
+  padding: 5px;
+  color: #545658;
+  font-size: 13px; 
+  line-height: 2;
+  background-color: #fbfbfb;
+  border: 1px solid #d9d9d9;
+  border-radius: 3px;
+  outline: none;
+  margin-top: 5px;
+  -webkit-appearance: none;
+  vertical-align: middle;
+  resize: none;
+}
+
+option {
+  display: block;
+  white-space: pre;
+  min-height: 1.2em;
+  padding: 0 2px 1px;
+}
+.select-area {
+  position: relative;
+}
+.select-area:after {
+  content: "";
+  display: inline-block;
+  height: 5px;
+  width: 5px;
+  border-right: 2px solid #d9d9d9;
+  border-bottom: 2px solid #d9d9d9;
+  transform: rotate(45deg);
+  position: absolute;
+  top: 18px;
+  right: 10px;
+}
+
+/* -----------Email&tell------------- */
+
+.addless-box {
+  margin-top: 5px;
+  box-sizing: border-box;
+  height:36px;
+  width: 100%;
+  padding: 5px;
+  color: #545658;
+  font-size: 13px;
+  line-height: 2;
+  background-color: #fbfbfb;
+  border: 1px solid #d9d9d9;
+  -webkit-appearance: none;
+  border-radius: 3px;
+  outline: none;
+  vertical-align: middle; 
+}
+
+/* --------------------cours-------------------- */
+
+.cours {
+  display: block;
+  margin-top: 10px;
+  font-size: 16px;
+  color: #545658;
+  padding-left: 27px;
+}
+.cours:first-child {
+  margin-top: 5px;
+}
+.course-option-text {
+  position: relative;
+
+}
+.cours input {
+  display: none;
+}
+.course-option-text:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -25px;
+  width: 15px;
+  height: 15px;
+
+  border: 1px solid #d9d9d9;
+}
+
+.cours input:checked + .course-option-text:after {
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: -20px;
+  width: 8px;
+  height: 16px;
+  transform: rotate(45deg);
+  border-right: 3px solid #01bfbd;
+  border-bottom: 3px solid #01bfbd;
+  /* background-color: #545658; */
+ }
+
+
+ /* --------------備考----------------- */
+
+.mt-05 {
+  margin-top: 5px;
+} 
+.remarks-box {
+  -webkit-appearance: none;
+  height: 100px;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 5px;
+  color: #545658;
+  font-size: 13px;
+  line-height: 2;
+  background-color: #fbfbfb;
+  border: 1px solid #d9d9d9;
+  border-radius: 3px;
+  outline: none;
+  resize: none;
+}
+
+:focus {
+  background-color: #fff;
+  border-color: rgba(59, 133, 133, .4);
+  box-shadow: 0 0 0 2px rgba(1, 191, 189, .1)
+}
+
+.button {
+  box-sizing: border-box;
+  display: inline-block;
+  text-align: center;
+  transition: .3s;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  border-radius: 3px;
+  vertical-align: middle;
+  -webkit-appearance: none;
+  padding: 13px;
+  background-color: #01bfbd;
+  color: #fff;
+  /* background: transparent; */
+  border: none;
+  outline: none;
+  resize: none;
+}
+
+.agreement {
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.link-color {
+  color: #01bfbd;
+}
+
+.foot-part {
+  margin-top: 32px;
+  text-align: center;
+  line-height: 16px;
+  font-size: 12px;
+}
+.remail {
+  display: inline-block;
+  margin-top: 8px;
+}
